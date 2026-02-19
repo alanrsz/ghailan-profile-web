@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeri foto kegiatan dan event Ghailan Rasendriya Samara.">
+  <title>Galeri | Ghailan Rasendriya Samara</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="container nav-wrapper">
+    <a href="index.html" class="nav-logo">Ghailan<span>.</span></a>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="nav-menu" id="nav-menu">
+      <a href="index.html">Beranda</a>
+      <a href="about.html">Tentang Saya</a>
+      <a href="experience.html">Pengalaman</a>
+      <a href="skills.html">Keahlian</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="certificates.html">Sertifikat</a>
+      <a href="gallery.html" class="active">Galeri</a>
+      <a href="contact.html">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container">
+    <p class="section-label">Gallery</p>
+    <h1 class="section-title">Galeri <span>Kegiatan</span></h1>
+    <p class="section-desc mx-auto">Dokumentasi kegiatan profesional, event, dan momen penting.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="gallery-grid reveal-stagger">
+
+      <div class="gallery-item" onclick="openModal('assets/Profil-Ghailan.jpeg', 'Foto Profesional')">
+        <img src="assets/Profil-Ghailan.jpeg" alt="Foto Profesional" loading="lazy">
+        <div class="gallery-overlay"><span>Foto Profesional</span></div>
+      </div>
+
+      <div class="gallery-item" onclick="openModal('assets/Sertifikat (13) Ghailan.jpg', 'Kegiatan Business Development')">
+        <img src="assets/Sertifikat (13) Ghailan.jpg" alt="Kegiatan BD" loading="lazy">
+        <div class="gallery-overlay"><span>Business Development</span></div>
+      </div>
+
+      <div class="gallery-item" onclick="openModal('assets/Sertifikat (12) Ghailan.jpg', 'Sertifikasi Profesional')">
+        <img src="assets/Sertifikat (12) Ghailan.jpg" alt="Sertifikasi" loading="lazy">
+        <div class="gallery-overlay"><span>Sertifikasi Profesional</span></div>
+      </div>
+
+      <div class="gallery-item" onclick="openModal('assets/Sertifikat (11) Ghailan.jpg', 'Workshop & Seminar')">
+        <img src="assets/Sertifikat (11) Ghailan.jpg" alt="Workshop" loading="lazy">
+        <div class="gallery-overlay"><span>Workshop &amp; Seminar</span></div>
+      </div>
+
+      <div class="gallery-item" onclick="openModal('assets/Sertifikat (10) Ghailan.png', 'Pelatihan Digital')">
+        <img src="assets/Sertifikat (10) Ghailan.png" alt="Pelatihan" loading="lazy">
+        <div class="gallery-overlay"><span>Pelatihan Digital</span></div>
+      </div>
+
+      <div class="gallery-item" onclick="openModal('assets/Sertifikat (9) Ghailan.jpg', 'Event Kampus')">
+        <img src="assets/Sertifikat (9) Ghailan.jpg" alt="Event" loading="lazy">
+        <div class="gallery-overlay"><span>Event Kampus</span></div>
+      </div>
+
+      <div class="gallery-item" onclick="openModal('assets/Sertifikat (5) Ghailan.png', 'Kegiatan Komunitas')">
+        <img src="assets/Sertifikat (5) Ghailan.png" alt="Komunitas" loading="lazy">
+        <div class="gallery-overlay"><span>Kegiatan Komunitas</span></div>
+      </div>
+
+      <div class="gallery-item" onclick="openModal('assets/Sertifikat (4) Ghailan.jpg', 'Kursus & Bootcamp')">
+        <img src="assets/Sertifikat (4) Ghailan.jpg" alt="Bootcamp" loading="lazy">
+        <div class="gallery-overlay"><span>Kursus &amp; Bootcamp</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MODAL LIGHTBOX -->
+<div class="modal-overlay" id="imageModal">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <img id="modalImage" src="" alt="Gallery Image">
+    <p class="modal-caption" id="modalCaption"></p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">Ghailan.</div>
+      <div class="footer-links">
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang</a>
+        <a href="experience.html">Pengalaman</a>
+        <a href="skills.html">Keahlian</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="certificates.html">Sertifikat</a>
+        <a href="gallery.html">Galeri</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ghailan Rasendriya Samara. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
